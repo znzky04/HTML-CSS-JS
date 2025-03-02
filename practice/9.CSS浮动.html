@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fluctuate</title>
+    <style>
+        .father {
+            height: 300px;
+            background-color: #f00;
+            border: 4px solid #00f;
+            /* overflow: hidden; 清除浮动1*/
+
+        }
+
+        /* .father::after {
+            content: '';
+            display: table;
+            clear: both;
+        } 清除浮动2*/
+
+        .left-son {
+            width: 100px;
+            height: 100px;
+            background-color: #0f0;
+            float: left;
+        }
+
+        .right-son {
+            width: 200px;
+            height: 200px;
+            background-color: #00f;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="left-son">左浮动</div>
+        <div class="right-son">右浮动</div>
+    </div>
+</body>
+</html>

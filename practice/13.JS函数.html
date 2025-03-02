@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 函数</title>
+</head>
+<body>
+    <script>
+        function hello() {
+            console.log("Hello World!");
+        }
+        hello();
+
+        function add(a, b) {
+            return a + b;
+        }
+
+        let sum = add(1, 2);
+        console.log(sum);
+        console.log(add(3, 4));
+
+        function sayHello(name) {
+            console.log("Hello " + name);
+        }
+        sayHello("Tom");
+
+        //作用域
+
+        let global_var = 'global_var';
+        function local_var_function() {
+            let local_var = 'local_var';
+            console.log(global_var);//函数内打印全局变量
+            console.log(local_var);//函数内打印局部变量
+        }
+
+        local_var_function();
+        //console.log(local_var);//函数外无法访问局部变量
+    </script>
+    
+</body>
+</html>

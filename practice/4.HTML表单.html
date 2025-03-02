@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 表单</title>
+</head>
+<body>
+    <p>form为表单的容器,有很多属性类似表格,action为接受数据的URL</p>
+    <form action="#">
+        <p>span和label差不多的使用方式,但是label仅和input搭配使用</p>
+        <span>用户名:</span>
+        <input type="text" placeholder="请输入内容" name="" id=""><br><br>
+        <label for="pwd">密码:</label>
+        <input type="password" value="请输入内容" name="" id="pwd"><br><br>
+        
+        <label for="">性别</label>
+        <p>input里加name属性可实现单选,即同一属性只能选一次,label的for属性对应input的id</p>
+        <input type="radio" name="gender" id="">男
+        <input type="radio" name="gender" id="">女<br><br>
+
+        <label for="">爱好:</label>
+        <p>多选对应checkbox</p>
+        <input type="checkbox" name="hobby" id="">ppp
+        <input type="checkbox" name="hobby" id="">mygo
+        <input type="checkbox" name="hobby" id="">mujica <br>
+
+        <input type="submit" name="" id="" value="上传吧">
+    </form>
+</body>
+</html>

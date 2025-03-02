@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Moon Light Parallax Effectsa | Vanilla Javascript</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/1style.css">
+</head>
+<body>
+    <section id="topic">
+        <img src = "../picture/avemujica.jpg" id="bg">
+        <img src = "../picture/avemujica2.jpg" id="avemujica">
+        <h2 id="text">AVE MUJICA MEMBER</h2>
+    </section> 
+    <section id="element1">
+        <img src = "../picture/saki2.jpg" id="saki">
+        <h2 id="text1">TOGAWA <br> SAKIKO</h2>
+    </section>
+    <section id="element2">
+        <img src = "../picture/nyamu.jpg" id="nyamu">
+        <h2 id="text2">YUTENJI <br> NYAMU</h2>
+    </section>
+    <section id="element3">
+        <img src = "../picture/umirin.jpg" id="umiri">
+        <h2 id="text3">YAHATA <br> UMIRI</h2>
+    </section>
+    <section id="element4">
+        <img src = "../picture/muzimi.jpg" id="mutsumi">
+        <h2 id="text4">WAKABA <br> MUTSUMI</h2>
+    </section>
+    <section id="element5">
+        <img src = "../picture/uika4.jpg" id="uika">
+        <h2 id="text5">MISUMI UIKA</h2>
+
+    </section>
+
+
+    <button id="toggleButton">CHANGE</button>
+
+    <script type="text/Javascript">
+        let bg = document.getElementById('bg');
+        let avemujica = document.getElementById('avemujica');
+        let text = document.getElementById('text');
+        let toggleButton = document.getElementById('toggleButton');
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            avemujica.style.top = value * 0.5 + 'px'
+            text.style.top = value * 1 + 'px';
+        })
+
+        toggleButton.addEventListener('click', function() {
+            if (bg.style.display === 'none') {
+                bg.style.display = 'block';
+                avemujica.style.display = 'none';
+            } else {
+                bg.style.display = 'none';
+                avemujica.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

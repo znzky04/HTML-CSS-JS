@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Dom</title>
+</head>
+<body>
+    <div id="box1">这是一个ID选择器标签</div>
+    <div class="box2">这是一个类选择器标签</div>
+    <div>普通的div标签</div>
+
+    <button>按钮</button>
+
+    <script>
+        var elementID = document.getElementById('box1');
+        console.log(elementID);
+
+        var elementClass = document.getElementsByClassName('box2')[0];
+        console.log(elementClass);
+
+        var elementTag = document.getElementsByTagName('div')[2];
+        console.log(elementTag);
+
+        elementID.innerHTML = '<a href="#">这是一个ID选择器标签，已经被修改</a>';//会解析html标签
+        elementClass.innerText = '<a href="#">这是一个类选择器标签，已经被修改</a>'; // 使用纯文本
+        elementTag.innerHTML = '这是一个普通的div标签，已经被修改';
+
+        elementTag.style.color = 'red';
+        elementTag.style.fontSize = '20px';
+
+        //DOM属性绑定事件
+        var buttonElement = document.getElementsByTagName('button')[0];
+        console.log(buttonElement);//确保绑定对了元素
+
+        // buttonElement.onclick = function(){
+        //     alert('按钮被点击了');
+        // }
+
+        // buttonElement.addEventListener('click', function(){
+        //     alert('按钮被点击了');
+        // });
+
+        buttonElement.addEventListener('click', clickEvent);
+
+        function clickEvent(){
+            alert('按钮被点击了');
+        }
+    </script>
+</body>
+</html>

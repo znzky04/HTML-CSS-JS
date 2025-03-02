@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Attributes</title>
+
+    <style>
+        .block {
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+        }
+
+        .inline {
+            display: inline;
+            /* 无法改变宽高 */
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+        }
+
+        .span-inline-block {
+            display:block;
+            width: 200px;
+            height: 200px;
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    
+<h1 style="font: bolder 50px 'KaiTi';">这是一个 font 复合属性示例</h1>
+<p style="line-height: 40px;">这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本</p>
+
+<div class="block">这是一个块级元素</div>
+<span class="inline">这是一个行内元素</span>
+<img src="./amoris.jpg" alt="amoris" class="inline-block">
+
+<!-- 转换元素 -->
+ <h2>display</h2>
+ <div style="display: inline; background-color: blue;">这是一个转换成行内元素的div标签</div>
+ <span class="span-inline-block">这是一个转换成行内块元素的span标签</span>
+</body>
+</html>

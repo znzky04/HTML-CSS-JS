@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件处理</title>
+</head>
+<body>
+    <button onclick="clickEvent()">点击事件按钮</button>
+    <input type="text" onfocus="focusEvent()" onblur="blurEvent()">
+    <script>
+        function clickEvent() {
+            alert('点击事件触发');
+        }
+        function focusEvent() {
+            console.log('输入框获取焦点事件触发');
+        }
+        function blurEvent() {
+            console.log('输入框失去焦点事件触发');
+        }
+    </script>
+</body>
+</html>

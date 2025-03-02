@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 基础语法</title>
+</head>
+<body>
+    
+    <script>
+        //按console.log()方法输出内容 在网页里的console查看
+        var x;
+        let y = 5;
+        const PI = 3.14;
+        console.log(x,y,PI);
+        let name = "John";
+        console.log(name);
+        let empty_value = null;
+        console.log(empty_value);
+
+        let age = 19
+
+        if (age < 18) {
+            console.log("未成年");
+        } else {
+            console.log("成年");
+        }
+
+        let time = 12;
+        if (time < 12) {
+            console.log("Good morning");
+        } else if (time < 18) {
+            console.log("Good day");
+        } else {
+            console.log("Good evening");
+        }
+
+        console.log("For 循环");
+        for (let i = 0; i < 5; i++) {
+            console.log(i);
+        }
+
+        console.log("While 循环");
+        let i = 0;
+        while (i < 5) {
+            console.log(i);
+            i++;
+        }
+
+        console.log("循环关键字");
+        for(var j = 0; j < 5; j++) {
+            if (j == 3) {
+                break;
+            }
+            if (j == 1) {
+                continue;
+            }
+            console.log(j);
+        }
+
+    </script>
+</body>
+</html>
